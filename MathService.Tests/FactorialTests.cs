@@ -5,7 +5,7 @@ public class FactorialTests
     [Fact]
     public void Factorial_BaseValue_0()
     {
-        Assert.Equal(0, FactorialService.GetFactorialOf(0));
+        Assert.Equal(1, FactorialService.GetFactorialOf(0));
     }
 
     [Fact]
