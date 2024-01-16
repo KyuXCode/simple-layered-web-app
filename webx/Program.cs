@@ -1,7 +1,8 @@
 using MathService;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
+var value = 7;
 
-app.MapGet("/", (int value) => "Here's the factorial of " + value + "=" + FactorialService.GetFactorialOf(value));
+app.MapGet("/", () => "Here's the result of " + value + "! = " + FactorialService.GetFactorialOf(value));
 
 app.Run();
